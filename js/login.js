@@ -10,6 +10,7 @@ document.getElementById('btn-login')
 
     if(phoneNumber === '01633'&& pinNumber === '1234'){
         console.log('you are login');
+       window.location.href = '/home.html';
     }
     else{
         alert('wrong phone number or pin');
