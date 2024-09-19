@@ -17,8 +17,24 @@ console.log(pinNmuber);
 // verify pin number 
 if(pinNmuber === '1234' ){
     console.log('add money to your account');
+
+    // get the current balance 
+    const balance =document.getElementById('account-balance').innerText;
+    console.log(balance)
+
+    // step-5
+
+    const newMoney =parseFloat(addMoney);
+    const balanceNumber = parseFloat(balance);
+    const newBalance = newMoney + balanceNumber;
+    console.log(newBalance);
+
+    // update balance in dom 
+
+    document.getElementById('account-balance').innerText =newBalance;
 }
 else{
     console.log('faild to add money');
 }
+
 })
